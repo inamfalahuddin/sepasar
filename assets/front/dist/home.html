@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="../dist/css/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../dist/css/main.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="w-full fixed z-50" id="navbar">
+      <div class="container">
+        <div class="flex items-center justify-between py-4 lg:py-0">
+          <!-- logo brand -->
+          <a href="#">
+            <img
+              class="w-40"
+              src="../dist/img/sepasar-brand.svg"
+              alt="sepasar.id"
+            />
+          </a>
+          <!-- navlinks for dekstop-->
+          <ul class="hidden lg:flex gap-6">
+            <li class="nav-item"><a href="">Home</a></li>
+            <li class="nav-item"><a href="">About</a></li>
+            <li class="nav-item dropdown-menu">
+              <a href="">Company</a>
+              <img
+                class="ml-2"
+                src="../dist/img/dropdown-icon.svg"
+                width="10"
+                alt=""
+              />
+              <ul class="dropdown" id="#dropdown1">
+                <li class="hover:opacity-50 mb-2"><a href="">Team</a></li>
+                <li class="hover:opacity-50"><a href="">Profile</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-menu nav-item">
+              <a href="">Clients</a>
+              <img
+                class="ml-2"
+                src="../dist/img/dropdown-icon.svg"
+                width="10"
+                alt=""
+              />
+              <ul class="dropdown">
+                <li class="hover:opacity-50 mb-2"><a href="">Relawan</a></li>
+                <li class="hover:opacity-50"><a href="">Pengajar </a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="">FAQ</a>
+            </li>
+          </ul>
+
+          <!-- navlinks for mobile -->
+          <ul class="lg:hidden nav-md-item">
+            <li class="nav-item"><a href="">Home</a></li>
+            <li class="nav-item"><a href="">About</a></li>
+            <li class="nav-item"><a href="">Team</a></li>
+            <li class="nav-item"><a href="">Profile</a></li>
+            <li class="nav-item"><a href="">Relawan</a></li>
+            <li class="nav-item"><a href="">Pengajar</a></li>
+            <li class="nav-item"><a href="">Blog</a></li>
+            <li class="nav-item"><a href="">FAQ</a></li>
+          </ul>
+          <!-- button login & register -->
+          <div class="hidden lg:flex gap-4 items-center">
+            <a class="text-primary-100 hover:opacity-50 transition-all" href=""
+              >Log In</a
+            >
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+          <!-- button menu -->
+          <div
+            id="btnMenu"
+            class="lg:hidden w-8 h-5 flex flex-col justify-between cursor-pointer"
+          >
+            <span class="block rounded-md w-100 h-1 bg-primary-100"></span>
+            <span class="block rounded-md w-100 h-1 bg-primary-100"></span>
+            <span class="block rounded-md w-100 h-1 bg-primary-100"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main>
+      <!-- hero section -->
+      <section class="bg-gradient-to-b from-light-100 to-white py-10 lg:py-5">
+        <div class="container">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 place-content-center lg:h-screen pt-32 lg:pt-0 gap-5"
+          >
+            <div
+              class="grid place-content-center order-2 md:order-1 text-center md:text-left mt-10 md:mt-0"
+            >
+              <h1 class="text-4xl font-bold text-dark-100">
+                Gabung Bersama Kami
+              </h1>
+              <p class="my-5">
+                Yuk gabung dengan pengajar dan relawan di Pasar. Menjadi
+                pendamping dalam bidang Edukasi di Pedagang Pasar tradisonal.
+                Belajar Mengabdi dan bermanfaat bagi sesama.
+              </p>
+              <!-- cal to action -->
+              <div
+                class="flex flex-col sm:flex-row justify-center md:justify-start gap-2 sm:gap-5"
+              >
+                <button class="btn btn-danger">RELAWAN</button>
+                <button class="btn btn-warning">PENGAJAR</button>
+              </div>
+
+              <!-- download my appliaction for mobile -->
+              <p class="mt-5 mb-2">Download Aplikasi Sepasar.id</p>
+              <a
+                class="text-center flex justify-center md:inline-block"
+                href=""
+              >
+                <img
+                  class="w-48 hover:opacity-80 transition-all"
+                  src="../dist/img/playstore.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div
+              class="flex justify-center md:justify-end items-center order-1 md:order-2"
+            >
+              <img src="../dist/img/hero-image.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- profile section -->
+      <section class="bg-gradient-to-b from-white to-light-100 py-10 lg:py-5">
+        <div class="container">
+          <div class="grid grid-cols-1 lg:grid-cols-12 mb-20">
+            <div
+              class="flex justify-center items-center lg:justify-start order-2 lg:order-1 col-span-7"
+            >
+              <!-- profile video -->
+              <iframe
+                class="w-full md:w-[560px] md:h-[315px]"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/2dEFNO4r9Do"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen=""
+              ></iframe>
+            </div>
+            <div
+              class="text-center lg:text-start mb-10 lg:mb-0 order-1 lg:order-2 col-span-5 flex flex-col justify-center items-center lg:items-start"
+            >
+              <h2 class="text-3xl">Profil Sepasar.id</h2>
+              <p class="my-5">
+                Sepasar.Id adalah suatu StartUp yang bergerak di Layanan
+                Pendidikan/Edukasi Gratis berbasis Aplikasi bagi Pedagang Pasar
+                Tradisional, Dapat diakses melalui Mobile Android ataupun Web
+                dengan Keunggulan Support Relawan Pengajar Profesional,
+                Pendampingan secara masif, Interaktif dengan ragam Materi yang
+                disesuaikan .
+              </p>
+              <button class="btn btn-primary">Selengkapnya >></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- feature section -->
+      <section class="py-10">
+        <div class="container">
+          <h2 class="title">Fitur-Fitur Aplikasi</h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <!-- card features -->
+            <div
+              class="card bg-light-100 flex items-center gap-5 cursor-default cursor-default"
+            >
+              <img
+                class="w-20"
+                src="../dist/img/materi-beragam-dark.svg"
+                alt=""
+              />
+              <span>
+                <h4 class="font-medium">Materi yang beragam</h4>
+                <span class="text-xs">Dibuat oleh Pengembang Professional</span>
+              </span>
+            </div>
+            <div
+              class="card bg-light-100 flex items-center gap-5 cursor-default"
+            >
+              <img
+                class="w-20"
+                src="../dist/img/keamanan-sistem-dark.svg"
+                alt=""
+              />
+              <span>
+                <h4 class="font-medium">Keamanan Sistem</h4>
+                <span class="text-xs">Dibuat oleh Pengembang Professional</span>
+              </span>
+            </div>
+            <div
+              class="card bg-light-100 flex items-center gap-5 cursor-default"
+            >
+              <img class="w-20" src="../dist/img/akses-dark.svg" alt="" />
+              <span>
+                <h4 class="font-medium">Akses tak terbatas</h4>
+                <span class="text-xs">Pelajari materi dimana saja</span>
+              </span>
+            </div>
+            <div
+              class="card bg-light-100 flex items-center gap-5 cursor-default"
+            >
+              <img class="w-20" src="../dist/img/edukasi-dark.svg" alt="" />
+              <span>
+                <h4 class="font-medium">Video Edukasi</h4>
+                <span class="text-xs">
+                  Tingkatkan berbagai macam keterampilan
+                </span>
+              </span>
+            </div>
+            <div
+              class="card bg-light-100 flex items-center gap-5 cursor-default"
+            >
+              <img class="w-20" src="../dist/img/pengajar-dark.svg" alt="" />
+              <span>
+                <h4 class="font-medium">Pengajar Professional</h4>
+                <span class="text-xs">
+                  Pemateri yang berpengalaman di bidangnya
+                </span>
+              </span>
+            </div>
+            <div
+              class="card bg-light-100 flex items-center gap-5 cursor-default"
+            >
+              <img class="w-20" src="../dist/img/relawan-dark.svg" alt="" />
+              <span>
+                <h4 class="font-medium">Relawan Terbaik</h4>
+                <span class="text-xs">
+                  Dapatkan bantuan dari Relawan terbaik
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- testimonial section -->
+      <section class="py-10 bg-light-100">
+        <div class="container">
+          <h2 class="title">Testimonials</h2>
+
+          <div class="slide-container swiper lg:h-96">
+            <div
+              class="slide-content w-full lg:w-10/12 overflow-hidden mx-auto"
+            >
+              <div class="swiper-wrapper pb-8 items-center">
+                <!-- testimonial card -->
+                <div class="card w-12 mx-auto swiper-slide">
+                  <div class="card-header flex items-center gap-5">
+                    <div
+                      class="w-14 h-14 rounded-full overflow-hidden bg-primary-100 object-cover"
+                    >
+                      <img
+                        class="w-full"
+                        src="../dist/img/rajiman.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-medium">Pak Rajiman</h3>
+                      <span class="font-semibold text-gray-400"
+                        >Penjahit di Pasar</span
+                      >
+                    </div>
+                  </div>
+                  <div class="card-body mt-6">
+                    <p class="text-gray-700">
+                      Mohon Relawan sering datang ke pasar karena yang berdagang
+                      rata-rata para orangtua yang perlu memahami isi video
+                      materi dari Sepasar.
+                    </p>
+                  </div>
+                </div>
+                <div class="card w-12 mx-auto swiper-slide">
+                  <div class="card-header flex items-center gap-5">
+                    <div
+                      class="w-14 h-14 rounded-full overflow-hidden bg-primary-100 object-cover"
+                    >
+                      <img
+                        class="w-full"
+                        src="../dist/img/rajiman.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-medium">Pak Rajiman</h3>
+                      <span class="font-semibold text-gray-400"
+                        >Penjahit di Pasar</span
+                      >
+                    </div>
+                  </div>
+                  <div class="card-body mt-6">
+                    <p class="text-gray-700">
+                      Mohon Relawan sering datang ke pasar karena yang berdagang
+                      rata-rata para orangtua yang perlu memahami isi video
+                      materi dari Sepasar.
+                    </p>
+                  </div>
+                </div>
+                <div class="card w-12 mx-auto swiper-slide">
+                  <div class="card-header flex items-center gap-5">
+                    <div
+                      class="w-14 h-14 rounded-full overflow-hidden bg-primary-100 object-cover"
+                    >
+                      <img
+                        class="w-full"
+                        src="../dist/img/rajiman.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-medium">Pak Rajiman</h3>
+                      <span class="font-semibold text-gray-400"
+                        >Penjahit di Pasar</span
+                      >
+                    </div>
+                  </div>
+                  <div class="card-body mt-6">
+                    <p class="text-gray-700">
+                      Mohon Relawan sering datang ke pasar karena yang berdagang
+                      rata-rata para orangtua yang perlu memahami isi video
+                      materi dari Sepasar.
+                    </p>
+                  </div>
+                </div>
+                <div class="card w-12 mx-auto swiper-slide">
+                  <div class="card-header flex items-center gap-5">
+                    <div
+                      class="w-14 h-14 rounded-full overflow-hidden bg-primary-100 object-cover"
+                    >
+                      <img
+                        class="w-full"
+                        src="../dist/img/rajiman.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-medium">Pak Rajiman</h3>
+                      <span class="font-semibold text-gray-400"
+                        >Penjahit di Pasar</span
+                      >
+                    </div>
+                  </div>
+                  <div class="card-body mt-6">
+                    <p class="text-gray-700">
+                      Mohon Relawan sering datang ke pasar karena yang berdagang
+                      rata-rata para orangtua yang perlu memahami isi video
+                      materi dari Sepasar.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next hidden lg:block"></div>
+            <div class="swiper-button-prev hidden lg:block"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- faq section -->
+      <section class="py-10">
+        <div class="container">
+          <div class="title">FAQ</div>
+          <div class="accordion">
+            <!-- accordion item -->
+            <div class="accordion-item" id="question1">
+              <div class="acordion-item-header flex justify-between">
+                <h4 class="font-bold text-primary-100">
+                  Apa relawan Sepasar itu?
+                </h4>
+                <div>
+                  <img
+                    class="faq-icon"
+                    src="../dist/img/faq-closed.svg"
+                    alt=""
+                    width="25px"
+                  />
+                </div>
+              </div>
+              <div class="acordion-item-body overflow-hidden max-h-0">
+                <p class="text-gray-500 max-w-3xl pt-4">
+                  Relawan Sepasar adalah kaum muda yang terpanggil secara
+                  sukarela untuk mendarmabaktikan ilmu serta tenaga untuk
+                  mendampingi proses belajar pedagang pasar tradisional di
+                  sekitar tempat tinggalnya
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item" id="question1">
+              <div class="acordion-item-header flex justify-between">
+                <h4 class="font-bold text-primary-100">
+                  Siapa saja yang bisa gabung jadi relawan?
+                </h4>
+                <div>
+                  <img
+                    class="faq-icon"
+                    src="../dist/img/faq-closed.svg"
+                    alt=""
+                    width="25px"
+                  />
+                </div>
+              </div>
+              <div class="acordion-item-body overflow-hidden max-h-0">
+                <p class="text-gray-500 max-w-3xl pt-4">
+                  Relawan Sepasar adalah kaum muda yang terpanggil secara
+                  sukarela untuk mendarmabaktikan ilmu serta tenaga untuk
+                  mendampingi proses belajar pedagang pasar tradisional di
+                  sekitar tempat tinggalnya
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item" id="question1">
+              <div class="acordion-item-header flex justify-between">
+                <h4 class="font-bold text-primary-100">
+                  Apa tugas relawan Sepasar?
+                </h4>
+                <div>
+                  <img
+                    class="faq-icon"
+                    src="../dist/img/faq-closed.svg"
+                    alt=""
+                    width="25px"
+                  />
+                </div>
+              </div>
+              <div class="acordion-item-body overflow-hidden max-h-0">
+                <p class="text-gray-500 max-w-3xl pt-4">
+                  Relawan Sepasar adalah kaum muda yang terpanggil secara
+                  sukarela untuk mendarmabaktikan ilmu serta tenaga untuk
+                  mendampingi proses belajar pedagang pasar tradisional di
+                  sekitar tempat tinggalnya
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item" id="question1">
+              <div class="acordion-item-header flex justify-between">
+                <h4 class="font-bold text-primary-100">
+                  Apa manfaat gabung disini?
+                </h4>
+                <div>
+                  <img
+                    class="faq-icon"
+                    src="../dist/img/faq-closed.svg"
+                    alt=""
+                    width="25px"
+                  />
+                </div>
+              </div>
+              <div class="acordion-item-body overflow-hidden max-h-0">
+                <p class="text-gray-500 max-w-3xl pt-4">
+                  Relawan Sepasar adalah kaum muda yang terpanggil secara
+                  sukarela untuk mendarmabaktikan ilmu serta tenaga untuk
+                  mendampingi proses belajar pedagang pasar tradisional di
+                  sekitar tempat tinggalnya
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item" id="question1">
+              <div class="acordion-item-header flex justify-between">
+                <h4 class="font-bold text-primary-100">
+                  Fasilitas apa yang akan didapatkan relawan?
+                </h4>
+                <div>
+                  <img
+                    class="faq-icon"
+                    src="../dist/img/faq-closed.svg"
+                    alt=""
+                    width="25px"
+                  />
+                </div>
+              </div>
+              <div class="acordion-item-body overflow-hidden max-h-0">
+                <p class="text-gray-500 max-w-3xl pt-4">
+                  Relawan Sepasar adalah kaum muda yang terpanggil secara
+                  sukarela untuk mendarmabaktikan ilmu serta tenaga untuk
+                  mendampingi proses belajar pedagang pasar tradisional di
+                  sekitar tempat tinggalnya
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <section class="bg-light-100 py-10">
+        <div class="container">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 text-gray-600"
+          >
+            <ul class="lg:col-span-2">
+              <li>
+                <img src="../dist/img/sepasar-brand-footer.svg" alt="" />
+              </li>
+              <li class="mt-5">
+                StartUp yang bergerak di Layanan Pendidikan Edukasi Gratis
+                berbasis Aplikasi bagi Pedagang Pasar Tradisional
+              </li>
+            </ul>
+            <ul>
+              <li class="font-bold mb-2 mt-4">Company</li>
+              <li class="mb-4 hover:text-primary-100 transition-all">
+                <a href="">Home</a>
+              </li>
+              <li class="mb-4 hover:text-primary-100 transition-all">
+                <a href="">About</a>
+              </li>
+              <li class="mb-4 hover:text-primary-100 transition-all">
+                <a href="">Pengajar</a>
+              </li>
+              <li class="mb-4 hover:text-primary-100 transition-all">
+                <a href="">Teams</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="font-bold mb-4 mt-4">Useful Link</li>
+              <li class="mb-4 hover:text-primary-100 transition-all">
+                <a href="">FAQ</a>
+              </li>
+              <li class="mb-4 hover:text-primary-100 transition-all">
+                <a href="">Relawan</a>
+              </li>
+              <li class="mb-4 hover:text-primary-100 transition-all">
+                <a href="">Blog</a>
+              </li>
+              <li class="mb-4 hover:text-primary-100 transition-all">
+                <a href="">Product Service</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="font-bold mb-4 mt-4">Contact</li>
+              <li class="mb-4 hover:text-primary-100 transition-all flex gap-2">
+                <img src="../dist/img/email-icon.svg" alt="" />
+                <a href="">sepasar@gmail.com</a>
+              </li>
+              <li
+                class="mb-4 hover:text-primary-100 transition-all flex gap-2 items-start"
+              >
+                <img src="../dist/img/call-icon.svg" alt="" />
+                <span>
+                  <a href="">+62-813-9003-2456</a> <br />
+                  <a href="">+62-812-2973-8047</a>
+                </span>
+              </li>
+              <li class="mb-4 hover:text-primary-100 transition-all flex gap-2">
+                <img src="../dist/img/location-icon.svg" alt="" />
+                <a href="">Sleman, Yogyakarta</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="bg-white py-10">
+        <div class="container">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 md:items-end md:justify-between"
+          >
+            <div>
+              <h5 class="font-bold mt-4">support by</h5>
+              <div class="flex">
+                <img class="mr-5" src="../dist/img/ristek-brin.svg" alt="" />
+                <img class="mr-5" src="../dist/img/umby-logo.svg" alt="" />
+              </div>
+            </div>
+            <div class="md:text-end mt-7 text-gray-500">
+              2022 Copyright br • All rights reserved • Made in Yogyakarta
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="../dist/js/swiper-bundle.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="../dist/js/main.js"></script>
+  </body>
+</html>

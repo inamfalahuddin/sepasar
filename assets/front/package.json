@@ -1,0 +1,23 @@
+{
+  "name": "sepasar.id",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/css/main.css -o ./dist/css/main.css --watch"
+  },
+  "keywords": [
+    "sepasar",
+    "sepasar.id",
+    "relawan",
+    "umby"
+  ],
+  "author": "In'am Falahuddin",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4"
+  }
+}

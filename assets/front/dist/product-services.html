@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="w-full fixed top-0 lg:relative bg-gradient-to-b from-light-100 to-white"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between py-4 lg:py-0">
+          <!-- logo brand -->
+          <a href="#">
+            <img
+              class="w-40"
+              src="../dist/img/sepasar-brand.svg"
+              alt="sepasar.id"
+            />
+          </a>
+          <!-- navlinks for dekstop-->
+          <ul class="hidden lg:flex gap-6">
+            <li class="nav-item"><a href="">Home</a></li>
+            <li class="nav-item"><a href="">About</a></li>
+            <li class="nav-item dropdown-menu">
+              <a href="">Company</a>
+              <img
+                class="ml-2"
+                src="../dist/img/dropdown-icon.svg"
+                width="10"
+                alt=""
+              />
+              <ul class="dropdown" id="#dropdown1">
+                <li class="hover:opacity-50 mb-2"><a href="">Team</a></li>
+                <li class="hover:opacity-50"><a href="">Profile</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-menu nav-item">
+              <a href="">Clients</a>
+              <img
+                class="ml-2"
+                src="../dist/img/dropdown-icon.svg"
+                width="10"
+                alt=""
+              />
+              <ul class="dropdown">
+                <li class="hover:opacity-50 mb-2"><a href="">Relawan</a></li>
+                <li class="hover:opacity-50"><a href="">Pengajar </a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="">FAQ</a>
+            </li>
+          </ul>
+
+          <!-- navlinks for mobile -->
+          <ul class="lg:hidden nav-md-item">
+            <li class="nav-item"><a href="">Home</a></li>
+            <li class="nav-item"><a href="">About</a></li>
+            <li class="nav-item"><a href="">Team</a></li>
+            <li class="nav-item"><a href="">Profile</a></li>
+            <li class="nav-item"><a href="">Relawan</a></li>
+            <li class="nav-item"><a href="">Pengajar</a></li>
+            <li class="nav-item"><a href="">Blog</a></li>
+            <li class="nav-item"><a href="">FAQ</a></li>
+          </ul>
+          <!-- button login & register -->
+          <div class="hidden lg:flex gap-4 items-center">
+            <a class="text-primary-100 hover:opacity-50 transition-all" href=""
+              >Log In</a
+            >
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+          <!-- button menu -->
+          <div
+            id="btnMenu"
+            class="lg:hidden w-8 h-5 flex flex-col justify-between cursor-pointer"
+          >
+            <span class="block rounded-md w-100 h-1 bg-primary-100"></span>
+            <span class="block rounded-md w-100 h-1 bg-primary-100"></span>
+            <span class="block rounded-md w-100 h-1 bg-primary-100"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main class="my-32 lg:my-20">
+      <div class="container">
+        <h1 class="title">Product & Service</h1>
+
+        <div class="grid grid-cols-1 text-center">
+          <div class="card bg-gray-50 cursor-pointer">
+            <span class="font-medium"
+              >Edukasi Hybrid melalui aplikasi Sepasar (Kurikulum, Metode,
+              Pengajar, Relawan, User)</span
+            >
+          </div>
+          <div class="card bg-gray-50 cursor-pointer">
+            <span class="font-medium"
+              >Pembuatan Platform Marketplace Pasar</span
+            >
+          </div>
+          <div class="card bg-gray-50 cursor-pointer">
+            <span class="font-medium"
+              >Merchandise (tshirt, apron, hoodie, banner, logo, media promosi,
+              dsb)</span
+            >
+          </div>
+          <div class="card bg-gray-50 cursor-pointer">
+            <span class="font-medium"
+              >Sepasar Skill (Pelatihan & Pendampingan)</span
+            >
+          </div>
+          <div class="card bg-gray-50 cursor-pointer">
+            <span class="font-medium"
+              >Manajemen tata kelola & Pengembangan Pasar</span
+            >
+          </div>
+          <div class="card bg-gray-50 cursor-pointer">
+            <span class="font-medium"
+              >Klinik Pasar (Cek Kondisi Kesehatan Usaha)</span
+            >
+          </div>
+          <div class="card bg-gray-50 cursor-pointer">
+            <span class="font-medium"
+              >Sepasar News (Informasi Kabar Pasar)</span
+            >
+          </div>
+          <div class="card bg-gray-50 cursor-pointer">
+            <span class="font-medium"
+              >Branding (Pembuatan Logo Pedagang Pasar)</span
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <section class="bg-light-100 py-14">
+        <div class="container">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-gray-600"
+          >
+            <ul>
+              <li>
+                <img src="../dist/img/sepasar-brand-footer.svg" alt="" />
+              </li>
+              <li class="mt-5">
+                StartUp yang bergerak di Layanan Pendidikan Edukasi Gratis
+                berbasis Aplikasi bagi Pedagang Pasar Tradisional
+              </li>
+            </ul>
+            <ul>
+              <li class="font-bold mb-2 mt-4">Company</li>
+              <li class="mb-2 hover:text-primary-100 transition-all">
+                <a href="">Home</a>
+              </li>
+              <li class="mb-2 hover:text-primary-100 transition-all">
+                <a href="">About</a>
+              </li>
+              <li class="mb-2 hover:text-primary-100 transition-all">
+                <a href="">Pengajar</a>
+              </li>
+              <li class="mb-2 hover:text-primary-100 transition-all">
+                <a href="">Teams</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="font-bold mb-2 mt-4">Useful Link</li>
+              <li class="mb-2 hover:text-primary-100 transition-all">
+                <a href="">FAQ</a>
+              </li>
+              <li class="mb-2 hover:text-primary-100 transition-all">
+                <a href="">Relawan</a>
+              </li>
+              <li class="mb-2 hover:text-primary-100 transition-all">
+                <a href="">Blog</a>
+              </li>
+              <li class="mb-2 hover:text-primary-100 transition-all">
+                <a href="">Product Service</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="font-bold mb-2 mt-4">Contact</li>
+              <li class="mb-2 hover:text-primary-100 transition-all flex gap-2">
+                <img src="../dist/img/email-icon.svg" alt="" />
+                <a href="">sepasar@gmail.com</a>
+              </li>
+              <li
+                class="mb-2 hover:text-primary-100 transition-all flex gap-2 items-start"
+              >
+                <img src="../dist/img/call-icon.svg" alt="" />
+                <span>
+                  <a href="">+62-813-9003-2456</a> <br />
+                  <a href="">+62-812-2973-8047</a>
+                </span>
+              </li>
+              <li class="mb-2 hover:text-primary-100 transition-all flex gap-2">
+                <img src="../dist/img/location-icon.svg" alt="" />
+                <a href="">Sleman, Yogyakarta</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="bg-white py-14">
+        <div class="container">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 md:items-end md:justify-between"
+          >
+            <div>
+              <h5 class="font-bold">support by</h5>
+              <div class="flex">
+                <img
+                  class="mr-10 mt-10 w-24"
+                  src="../dist/img/ristek-brin.svg"
+                  alt=""
+                />
+                <img
+                  class="mr-10 mt-10 w-24"
+                  src="../dist/img/umby-logo.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="md:text-end mt-7 text-gray-500">
+              2022 Copyright br • All rights reserved • Made in Yogyakarta
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="../dist/js/main.js"></script>
+  </body>
+</html>

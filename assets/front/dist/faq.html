@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="../dist/css/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../dist/css/main.css" />
+  </head>
+
+  <body>
+    <button class="btn btn-primary absolute z-50" id="btnProfileDetail">
+      Tombol
+    </button>
+    <!-- navbar -->
+    <nav
+      class="bg-gradient-to-b from-light-200 to-white w-full fixed top-0 z-50"
+      id="navbar"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between py-4 lg:py-0">
+          <!-- logo brand -->
+          <a href="#">
+            <img
+              class="w-40"
+              src="../dist/img/sepasar-brand.svg"
+              alt="sepasar.id"
+            />
+          </a>
+          <!-- navlinks for dekstop-->
+          <ul class="hidden lg:flex gap-6">
+            <li class="nav-item"><a href="">Home</a></li>
+            <li class="nav-item"><a href="">About</a></li>
+            <li class="nav-item dropdown-menu">
+              <a href="">Company</a>
+              <img
+                class="ml-2"
+                src="../dist/img/dropdown-icon.svg"
+                width="10"
+                alt=""
+              />
+              <ul class="dropdown" id="#dropdown1">
+                <li class="hover:opacity-50 mb-2"><a href="">Team</a></li>
+                <li class="hover:opacity-50"><a href="">Profile</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-menu nav-item">
+              <a href="">Clients</a>
+              <img
+                class="ml-2"
+                src="../dist/img/dropdown-icon.svg"
+                width="10"
+                alt=""
+              />
+              <ul class="dropdown">
+                <li class="hover:opacity-50 mb-2"><a href="">Relawan</a></li>
+                <li class="hover:opacity-50"><a href="">Pengajar </a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="">FAQ</a>
+            </li>
+          </ul>
+
+          <!-- navlinks for mobile -->
+          <ul class="lg:hidden nav-md-item">
+            <li class="nav-item"><a href="">Home</a></li>
+            <li class="nav-item"><a href="">About</a></li>
+            <li class="nav-item"><a href="">Team</a></li>
+            <li class="nav-item"><a href="">Profile</a></li>
+            <li class="nav-item"><a href="">Relawan</a></li>
+            <li class="nav-item"><a href="">Pengajar</a></li>
+            <li class="nav-item"><a href="">Blog</a></li>
+            <li class="nav-item"><a href="">FAQ</a></li>
+          </ul>
+          <!-- button login & register -->
+          <div class="hidden lg:flex gap-4 items-center">
+            <a class="text-primary-100 hover:opacity-50 transition-all" href=""
+              >Log In</a
+            >
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+          <!-- button menu -->
+          <div
+            id="btnMenu"
+            class="lg:hidden w-8 h-5 flex flex-col justify-between cursor-pointer"
+          >
+            <span class="block rounded-md w-100 h-1 bg-primary-100"></span>
+            <span class="block rounded-md w-100 h-1 bg-primary-100"></span>
+            <span class="block rounded-md w-100 h-1 bg-primary-100"></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main -->
+    <main class="my-32 lg:my-20 pt-5">
+      <!-- backdrop -->
+      <div
+        class="hidden overlay-profile-detail overflow-auto fixed top-16 left-0 right-0 bottom-0 bg-backdrop-100 animate-fadeIn"
+      >
+        <div class="container">
+          <div
+            class="card card-detail mx-auto max-w-2xl lg:mt-20 animate-pushInBottom transform -translate-y-[120%]"
+          >
+            <div class="card-body">
+              <!-- profile img -->
+              <div
+                class="bg-gray-100 w-44 h-50 rounded-lg overflow-hidden lg:float-left lg:mr-8 mb-5 mx-auto"
+              >
+                <img class="object-cover" src="../dist/img/awan.jpg" alt="" />
+              </div>
+              <!-- profile description -->
+              <div>
+                <p class="text-gray-600 mb-5">
+                  Co-founder Sekolah Pasar yang sejak tahun 2012 diinisiasi di
+                  pasar pasar rakyat di D.I. Yogyakarta, Jawa Tengah, Jawa
+                  Timur, dan direplikasi di banyak pasar lain di Indonesia,
+                  serta saat ini menjadi salah satu program revitalisasi pasar
+                  rakyat di Kementerian Perdagangan Republik Indonesia. Pernah
+                  menjadi Direktur Mubyarto Institute dan menginisiasi berbagai
+                  model popular education seperti Perguruan Tinggi Desa (PTDes),
+                  Sekolah Buruh, Sekolah Desa
+                </p>
+                <p class="text-gray-600 mb-5">
+                  Mandiri, Sekolah Koperasi Gula Kelapa, Sekolah Koperasi
+                  Indonesia Sekopia), dan bersama Konsorsium Kemala menginisiasi
+                  sekolah Hijau di Tanjung Jabung Timur, Jambi dan Solok
+                  Selatan, Sumatera Barat. Saat ini sebagai staf Pengajar di
+                  Fakultas Ekonomi dan Kepala Pusat Penelitian Pengabdian
+                  Masyarakat, dan Kerjasama(P3MK) Universitas Mercu Buana
+                  Yogyakarta (UMBY), peneliti Pusat Studi Ekonomi Kerakyatan
+                  UGM, anggota BPH Yayasan Mubyarto, Dewan Pakar Indonesian
+                  Consortium for Cooperative Innovation(ICCI), dan CeO Sepasar.
+                </p>
+              </div>
+            </div>
+            <div class="card-footer text-right">
+              <button class="btn btn-primary px-8" id="btnProfileClose">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="title">FAQ</div>
+        <div class="accordion">
+          <!-- accordion item -->
+          <div
+            class="accordion-item bg-gray-100 border-0 shadow-sm"
+            id="question1"
+          >
+            <div class="acordion-item-header flex justify-between">
+              <h4 class="font-bold text-primary-100">
+                Apa relawan Sepasar itu?
+              </h4>
+              <div>
+                <img
+                  class="faq-icon"
+                  src="../dist/img/faq-closed.svg"
+                  alt=""
+                  width="25px"
+                />
+              </div>
+            </div>
+            <div class="acordion-item-body overflow-hidden max-h-0">
+              <p class="text-gray-500 max-w-3xl pt-4">
+                Relawan Sepasar adalah kaum muda yang terpanggil secara sukarela
+                untuk mendarmabaktikan ilmu serta tenaga untuk mendampingi
+                proses belajar pedagang pasar tradisional di sekitar tempat
+                tinggalnya
+              </p>
+            </div>
+          </div>
+          <div
+            class="accordion-item bg-gray-100 border-0 shadow-sm"
+            id="question1"
+          >
+            <div class="acordion-item-header flex justify-between">
+              <h4 class="font-bold text-primary-100">
+                Apa relawan Sepasar itu?
+              </h4>
+              <div>
+                <img
+                  class="faq-icon"
+                  src="../dist/img/faq-closed.svg"
+                  alt=""
+                  width="25px"
+                />
+              </div>
+            </div>
+            <div class="acordion-item-body overflow-hidden max-h-0">
+              <p class="text-gray-500 max-w-3xl pt-4">
+                Relawan Sepasar adalah kaum muda yang terpanggil secara sukarela
+                untuk mendarmabaktikan ilmu serta tenaga untuk mendampingi
+                proses belajar pedagang pasar tradisional di sekitar tempat
+                tinggalnya
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <section class="bg-light-100 py-10">
+        <div class="container">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 text-gray-600"
+          >
+            <ul class="lg:col-span-2">
+              <li>
+                <img src="../dist/img/sepasar-brand-footer.svg" alt="" />
+              </li>
+              <li class="mt-5">
+                StartUp yang bergerak di Layanan Pendidikan Edukasi Gratis
+                berbasis Aplikasi bagi Pedagang Pasar Tradisional
+              </li>
+            </ul>
+            <ul>
+              <li class="font-bold mb-2 mt-4">Company</li>
+              <li class="mb-4 hover:text-primary-100 transition-all">
+                <a href="">Home</a>
+              </li>
+              <li class="mb-4 hover:text-primary-100 transition-all">
+                <a href="">About</a>
+              </li>
+              <li class="mb-4 hover:text-primary-100 transition-all">
+                <a href="">Pengajar</a>
+              </li>
+              <li class="mb-4 hover:text-primary-100 transition-all">
+                <a href="">Teams</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="font-bold mb-4 mt-4">Useful Link</li>
+              <li class="mb-4 hover:text-primary-100 transition-all">
+                <a href="">FAQ</a>
+              </li>
+              <li class="mb-4 hover:text-primary-100 transition-all">
+                <a href="">Relawan</a>
+              </li>
+              <li class="mb-4 hover:text-primary-100 transition-all">
+                <a href="">Blog</a>
+              </li>
+              <li class="mb-4 hover:text-primary-100 transition-all">
+                <a href="">Product Service</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="font-bold mb-4 mt-4">Contact</li>
+              <li class="mb-4 hover:text-primary-100 transition-all flex gap-2">
+                <img src="../dist/img/email-icon.svg" alt="" />
+                <a href="">sepasar@gmail.com</a>
+              </li>
+              <li
+                class="mb-4 hover:text-primary-100 transition-all flex gap-2 items-start"
+              >
+                <img src="../dist/img/call-icon.svg" alt="" />
+                <span>
+                  <a href="">+62-813-9003-2456</a> <br />
+                  <a href="">+62-812-2973-8047</a>
+                </span>
+              </li>
+              <li class="mb-4 hover:text-primary-100 transition-all flex gap-2">
+                <img src="../dist/img/location-icon.svg" alt="" />
+                <a href="">Sleman, Yogyakarta</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="bg-white py-10">
+        <div class="container">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 md:items-end md:justify-between"
+          >
+            <div>
+              <h5 class="font-bold mt-4">support by</h5>
+              <div class="flex">
+                <img class="mr-5" src="../dist/img/ristek-brin.svg" alt="" />
+                <img class="mr-5" src="../dist/img/umby-logo.svg" alt="" />
+              </div>
+            </div>
+            <div class="md:text-end mt-7 text-gray-500">
+              2022 Copyright br • All rights reserved • Made in Yogyakarta
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="../dist/js/swiper-bundle.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="../dist/js/main.js"></script>
+  </body>
+</html>
