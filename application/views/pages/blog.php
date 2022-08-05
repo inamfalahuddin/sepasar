@@ -5,7 +5,7 @@
         <div class="grid grid-cols-3 card rounded-lg p-10">
             <div class="col-span-3 lg:col-span-2 justify-center lg:justify-start flex">
                 <video width="600px" height="auto" class="rounded-xl cursor-pointer"
-                    poster="<?= base_url()  ?>assets/front/dist//img/poster-artikel-video.jpg" id="artikelVideo">
+                    poster="<?= base_url()  ?>assets/front/dist/img/poster-artikel-video.jpg" id="artikelVideo">
                     <source src="<?= base_url() ?>assets/front/dist/Profile-Sepasar.id-Aplikasi-Mengajar-di-Pasar.mp4"
                         type="video/webm" />
                 </video>
@@ -15,7 +15,7 @@
                     Video Profile <br />
                     Aplikasi
                 </h2>
-                <img class="w-40" src="<?= base_url()?>assets/front/dist//img/sepasar-brand.svg" alt="" />
+                <img class="w-40" src="<?= base_url()?>assets/front/dist/img/sepasar-brand.svg" alt="" />
             </div>
         </div>
 
@@ -24,12 +24,15 @@
             <!-- card -->
             <?php foreach($thumbnails as $thumb) : ?>
             <div class="card p-0 overflow-hidden">
-                <div class="card-img rounded-none h-auto bg-primary-100">
-                    <img class="w-full" src="<?= base_url($thumb['img'])  ?>" alt="" />
-                </div>
-                <div class="card-body text-center p-5">
-                    <span><?= $thumb['title'] ?></span>
-                </div>
+                <a class="cursor-pointer" href="<?= base_url('blog/detail/'.$thumb['id']) ?>">
+                    <div class="card-img overflow-hidden rounded-none h-36 bg-light-100">
+                        <img class="w-full object-fit"
+                            src="<?= base_url()  ?>assets/front/dist/img/<?= $thumb['img'] ?>" alt="" />
+                    </div>
+                    <div class="card-body text-center p-5">
+                        <span class="cursor-pointer"><?= $thumb['title'] ?></span>
+                    </div>
+                </a>
             </div>
             <?php endforeach ?>
 

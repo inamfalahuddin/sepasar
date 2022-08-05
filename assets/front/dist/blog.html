@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Swiper CSS -->
+		<link rel="stylesheet" href="../dist/css/swiper-bundle.min.css" />
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="../dist/css/main.css" />
+	</head>
+
+	<body>
+		<!-- navbar -->
+		<nav
+			class="bg-gradient-to-b from-light-200 to-white w-full fixed top-0 z-50"
+			id="navbar"
+		>
+			<div class="container">
+				<div class="flex items-center justify-between py-4 lg:py-0">
+					<!-- logo brand -->
+					<a href="#">
+						<img
+							class="w-40"
+							src="../dist/img/sepasar-brand.svg"
+							alt="sepasar.id"
+						/>
+					</a>
+					<!-- navlinks for dekstop-->
+					<ul class="hidden lg:flex gap-6">
+						<li class="nav-item"><a href="">Home</a></li>
+						<li class="nav-item"><a href="">About</a></li>
+						<li class="nav-item dropdown-menu">
+							<a href="">Company</a>
+							<img
+								class="ml-2"
+								src="../dist/img/dropdown-icon.svg"
+								width="10"
+								alt=""
+							/>
+							<ul class="dropdown" id="#dropdown1">
+								<li class="hover:opacity-50 mb-2"><a href="">Team</a></li>
+								<li class="hover:opacity-50"><a href="">Profile</a></li>
+							</ul>
+						</li>
+						<li class="dropdown-menu nav-item">
+							<a href="">Clients</a>
+							<img
+								class="ml-2"
+								src="../dist/img/dropdown-icon.svg"
+								width="10"
+								alt=""
+							/>
+							<ul class="dropdown">
+								<li class="hover:opacity-50 mb-2"><a href="">Relawan</a></li>
+								<li class="hover:opacity-50"><a href="">Pengajar </a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a href="">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a href="">FAQ</a>
+						</li>
+					</ul>
+
+					<!-- navlinks for mobile -->
+					<ul class="lg:hidden nav-md-item">
+						<li class="nav-item"><a href="">Home</a></li>
+						<li class="nav-item"><a href="">About</a></li>
+						<li class="nav-item"><a href="">Team</a></li>
+						<li class="nav-item"><a href="">Profile</a></li>
+						<li class="nav-item"><a href="">Relawan</a></li>
+						<li class="nav-item"><a href="">Pengajar</a></li>
+						<li class="nav-item"><a href="">Blog</a></li>
+						<li class="nav-item"><a href="">FAQ</a></li>
+					</ul>
+					<!-- button login & register -->
+					<div class="hidden lg:flex gap-4 items-center">
+						<a class="text-primary-100 hover:opacity-50 transition-all" href=""
+							>Log In</a
+						>
+						<button class="btn btn-primary">Get Started</button>
+					</div>
+					<!-- button menu -->
+					<div
+						id="btnMenu"
+						class="lg:hidden w-8 h-5 flex flex-col justify-between cursor-pointer"
+					>
+						<span class="block rounded-md w-100 h-1 bg-primary-100"></span>
+						<span class="block rounded-md w-100 h-1 bg-primary-100"></span>
+						<span class="block rounded-md w-100 h-1 bg-primary-100"></span>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- main -->
+		<main class="my-32 lg:my-20 pt-5">
+			<div class="container py-24">
+				<!-- news-header -->
+				<div>
+					<!-- path -->
+					<span class="text-primary-100 text-sm"
+						><a href="">HOME</a>/ <a href="">NEWS</a>/
+						<span class="text-gray-500 cursor-default"
+							>Kunjungan ke Desa Canden Bantul</span
+						>
+					</span>
+
+					<!-- title -->
+					<h2 class="title p-0 mx-0 my-3 text-start">
+						Kunjungan ke Desa Canden Bantul
+					</h2>
+
+					<!-- date -->
+					<span class="text-primary-100 text-sm"
+						><a href="">NEWS</a>/
+						<span class="text-gray-500 cursor-default">10 Juni 2022</span>
+					</span>
+				</div>
+
+				<!-- row -->
+				<div class="grid grid-cols-6 gap-5">
+					<div class="col-span-6 lg:col-span-4">
+						<!-- news-img -->
+						<div
+							class="inline-block bg-gray-200 rounded-md w-full h-auto overflow-hidden mt-5"
+						>
+							<img
+								class="w-full h-auto"
+								src="../dist/img/06112021104239000000.jpeg"
+								alt=""
+							/>
+						</div>
+
+						<!-- news-content -->
+						<div class="py-12 border-b-2 text-gray-600">
+							<p>
+								Perusahaan start-up Sepasar mengadakan pertemuan dengan
+								Pemerintah Daerah DI Yogyakarta. Pertemuan antar tim Sepasar
+								dengan Pemerintah Daerah DI Yogyakarta berlangsung di R.R Biro
+								Administrasi Kepatihan Danurejan Yogyakarta. Pertemuan dihadiri
+								secara langsung oleh CEO Sepasar yaitu Awan Santosa, SE., M.Sc
+								beserta rekan Sepasar lainnya dengan dihadiri Kepala KPw. Bank
+								Indonesia DIY, Kepala Bappeda DIY, Kepala Dinas Perindustrian
+								dan Perdagangan DIY, Kepala Biro Adminitrasi Perekonomian dan
+								SDA Setda DIY, Kabag. Rekayasa Perekonomian, Kabag. Sumber Daya
+								Perokonmian, Kabag. Pengelolaan Stabilitas Perekonomian Daerah,
+								Kasubbag. Analisa Kebijakan Percepatan Pemerataan Pembangunan
+								Ekonomi Wilayah, dan Kasubbag. Pengendalian Inflasi Daerah.
+								<br />
+								<br />
+								Pertemuan tim Sepasar dengan Pemerintah Daerah DI Yogyakarta
+								tersebut diadakan secara tatap muka pada hari Selasa, 15 Juni
+								2021 pukul 08.30 WIB. Dimana pertemuan tersebut diadakan dalam
+								rangka menawarkan kerjasama antar Sepasar dengan Pemerintah DI
+								Yogyakarta. Kerja sama tersebut menawarkan agar Sepasar dapat
+								membantu dalam pengembangan pasar tradisional yang ada di
+								wilayah DI Yogyakarta. Dalam penawaran kerjasama tersebut,
+								Sepasar menawarkan beberapa produk/jasa dan program layanan yang
+								dimilik Sepasar dan diyakini akan dapat mengembangkan pasar
+								tradisional di wilayah DI Yogyakarta. Salah satu produk/ jasa
+								layanan program yang di buat Sepasar dalam mengembangkan pasar
+								tradisional yaitu bimbingan teknis bagi pengelola pasar,
+								manajemen koperasi pasar, dan apliksi Teknologi Tepat Guna (TTG)
+								dipasar.
+							</p>
+						</div>
+
+						<!-- share article -->
+						<div class="py-5 border-b-2">
+							<!-- share article title -->
+							<h3
+								class="text-lg font-bold border-b-[3px] inline-block border-primary-100"
+							>
+								Share Artikel
+							</h3>
+
+							<!-- share article social -->
+							<div class="mt-5">
+								<a class="mr-3" href="">
+									<img
+										class="inline-block w-12"
+										src="./img/social-facebook.svg"
+										alt=""
+									/>
+								</a>
+								<a class="mr-3" href="">
+									<img
+										class="inline-block w-12"
+										src="./img/social-twitter.svg"
+										alt=""
+									/>
+								</a>
+								<a class="mr-3" href="">
+									<img
+										class="inline-block w-12"
+										src="./img/socila-whatsapp.svg"
+										alt=""
+									/>
+								</a>
+							</div>
+						</div>
+
+						<!-- news-related -->
+						<div class="py-5">
+							<!-- article related title -->
+							<h3
+								class="text-lg font-bold border-b-[3px] inline-block border-primary-100"
+							>
+								Artikel Terkait
+							</h3>
+
+							<!--  article related social -->
+							<div class="mt-5 grid grid-cols-1 lg:grid-cols-3 gap-5">
+								<div class="card rounded-xl m-0 p-0 overflow-hidden">
+									<div class="card-img rounded-none h-20 h-32 bg-primary-100">
+										<img
+											class="w-full"
+											src="../dist/img/desa-canden-bantul.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="card-body p-3 text-sm">
+										<span
+											>Pembagian Hadiah dan Doorprize Tim KKN dan Sepasar di
+											Pasar Sambilegi</span
+										>
+									</div>
+								</div>
+								<div class="card rounded-xl m-0 p-0 overflow-hidden">
+									<div class="card-img rounded-none h-auto bg-primary-100">
+										<img
+											class="w-full"
+											src="../dist/img/desa-canden-bantul.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="card-body p-3 text-sm">
+										<span
+											>Pembagian Hadiah dan Doorprize Tim KKN dan Sepasar di
+											Pasar Sambilegi</span
+										>
+									</div>
+								</div>
+								<div class="card rounded-xl m-0 p-0 overflow-hidden">
+									<div class="card-img rounded-none h-auto bg-primary-100">
+										<img
+											class="w-full"
+											src="../dist/img/desa-canden-bantul.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="card-body p-3 text-sm">
+										<span
+											>Pembagian Hadiah dan Doorprize Tim KKN dan Sepasar di
+											Pasar Sambilegi</span
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-span-4 lg:col-span-2">
+						<div class="hidden lg:block card p-5">
+							<div class="card-title">
+								<h3
+									class="text-lg font-bold border-b-[3px] inline-block border-primary-100"
+								>
+									Artikel Terbaru
+								</h3>
+							</div>
+							<div class="card-body text-gray-600">
+								<ul class="list-article-recent">
+									<li class="border-b-2 mt-5 hover:text-primary-100">
+										<a href="">Audiensi Sepasar di Pemuda Gunungkidul</a>
+									</li>
+									<li class="border-b-2 mt-5 hover:text-primary-100">
+										<a href="">Audiensi Sepasar di Pemuda Gunungkidul</a>
+									</li>
+									<li class="border-b-2 mt-5 hover:text-primary-100">
+										<a href="">Audiensi Sepasar di Pemuda Gunungkidul</a>
+									</li>
+									<li class="border-b-2 mt-5 hover:text-primary-100">
+										<a href="">Audiensi Sepasar di Pemuda Gunungkidul</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- footer -->
+		<footer>
+			<section class="bg-light-100 py-10">
+				<div class="container">
+					<div
+						class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 text-gray-600"
+					>
+						<ul class="lg:col-span-2">
+							<li>
+								<img src="../dist/img/sepasar-brand-footer.svg" alt="" />
+							</li>
+							<li class="mt-5">
+								StartUp yang bergerak di Layanan Pendidikan Edukasi Gratis
+								berbasis Aplikasi bagi Pedagang Pasar Tradisional
+							</li>
+						</ul>
+						<ul>
+							<li class="font-bold mb-2 mt-4">Company</li>
+							<li class="mb-4 hover:text-primary-100 transition-all">
+								<a href="">Home</a>
+							</li>
+							<li class="mb-4 hover:text-primary-100 transition-all">
+								<a href="">About</a>
+							</li>
+							<li class="mb-4 hover:text-primary-100 transition-all">
+								<a href="">Pengajar</a>
+							</li>
+							<li class="mb-4 hover:text-primary-100 transition-all">
+								<a href="">Teams</a>
+							</li>
+						</ul>
+						<ul>
+							<li class="font-bold mb-4 mt-4">Useful Link</li>
+							<li class="mb-4 hover:text-primary-100 transition-all">
+								<a href="">FAQ</a>
+							</li>
+							<li class="mb-4 hover:text-primary-100 transition-all">
+								<a href="">Relawan</a>
+							</li>
+							<li class="mb-4 hover:text-primary-100 transition-all">
+								<a href="">Blog</a>
+							</li>
+							<li class="mb-4 hover:text-primary-100 transition-all">
+								<a href="">Product Service</a>
+							</li>
+						</ul>
+						<ul>
+							<li class="font-bold mb-4 mt-4">Contact</li>
+							<li class="mb-4 hover:text-primary-100 transition-all flex gap-2">
+								<img src="../dist/img/email-icon.svg" alt="" />
+								<a href="">sepasar@gmail.com</a>
+							</li>
+							<li
+								class="mb-4 hover:text-primary-100 transition-all flex gap-2 items-start"
+							>
+								<img src="../dist/img/call-icon.svg" alt="" />
+								<span>
+									<a href="">+62-813-9003-2456</a> <br />
+									<a href="">+62-812-2973-8047</a>
+								</span>
+							</li>
+							<li class="mb-4 hover:text-primary-100 transition-all flex gap-2">
+								<img src="../dist/img/location-icon.svg" alt="" />
+								<a href="">Sleman, Yogyakarta</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="bg-white py-10">
+				<div class="container">
+					<div
+						class="grid grid-cols-1 md:grid-cols-2 md:items-end md:justify-between"
+					>
+						<div>
+							<h5 class="font-bold mt-4">support by</h5>
+							<div class="flex">
+								<img class="mr-5" src="../dist/img/ristek-brin.svg" alt="" />
+								<img class="mr-5" src="../dist/img/umby-logo.svg" alt="" />
+							</div>
+						</div>
+						<div class="md:text-end mt-7 text-gray-500">
+							2022 Copyright br • All rights reserved • Made in Yogyakarta
+						</div>
+					</div>
+				</div>
+			</section>
+		</footer>
+
+		<!-- Swiper JS -->
+		<script src="../dist/js/swiper-bundle.min.js"></script>
+
+		<!-- Javascript -->
+		<script src="../dist/js/main.js"></script>
+	</body>
+</html>

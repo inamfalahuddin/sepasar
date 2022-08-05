@@ -5,7 +5,7 @@
     <?php $this->load->view('layout/header') ?>
 </head>
 
-<body>
+<body class="hidden">
     <!-- navbar -->
     <nav class="<?= $nav_style ? $nav_style : '' ?> w-full fixed z-50" id="navbar">
         <div class="container">
@@ -44,15 +44,15 @@
                 </ul>
 
                 <!-- navlinks for mobile -->
-                <ul class="lg:hidden nav-md-item">
-                    <li class="nav-item"><a href="">Home</a></li>
-                    <li class="nav-item"><a href="">About</a></li>
-                    <li class="nav-item"><a href="">Team</a></li>
-                    <li class="nav-item"><a href="">Profile</a></li>
-                    <li class="nav-item"><a href="">Relawan</a></li>
-                    <li class="nav-item"><a href="">Pengajar</a></li>
-                    <li class="nav-item"><a href="">Blog</a></li>
-                    <li class="nav-item"><a href="">FAQ</a></li>
+                <ul class="md:hidden nav-md-item">
+                    <li class="nav-item"><a href="<?= base_url('home') ?>">Home</a></li>
+                    <li class="nav-item"><a href="<?= base_url('about') ?>">About</a></li>
+                    <li class="nav-item"><a href="<?= base_url('team') ?>">Team</a></li>
+                    <li class="nav-item"><a href="<?= base_url('profile') ?>">Profile</a></li>
+                    <li class="nav-item"><a href="<?= base_url('relawan') ?>">Relawan</a></li>
+                    <li class="nav-item"><a href="<?= base_url('pengajar') ?>">Pengajar</a></li>
+                    <li class="nav-item"><a href="<?= base_url('blog') ?>">Blog</a></li>
+                    <li class="nav-item"><a href="<?= base_url('faq') ?>">FAQ</a></li>
                 </ul>
                 <!-- button login & register -->
                 <div class="hidden lg:flex gap-4 items-center">

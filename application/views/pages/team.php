@@ -1,13 +1,13 @@
 <div class="container">
     <h1 class="title">Sepasar Team</h1>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center px-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center lg:px-10">
 
         <!-- card -->
         <?php foreach($teams as $team) : ?>
         <div class="card">
             <div class="card-img">
-                <img src="<?= base_url() ?><?= $team['img'] ?>" alt="" />
+                <img src="<?= base_url('assets/front/dist/img/') ?><?= $team['img'] ?>" alt="" />
             </div>
             <div class="card-body">
                 <h3 class="font-bold text-lg mt-6"><?= $team['name'] ?></h3>
@@ -29,32 +29,10 @@
             <div class="card-body">
                 <!-- profile img -->
                 <div class="bg-gray-100 w-44 h-50 rounded-lg overflow-hidden lg:float-left lg:mr-8 mb-5 mx-auto">
-                    <img id="detail-img" class="object-cover" src="<?= base_url() ?><?= $team['img'] ?>" alt="" />
+                    <img id="detail-img" class="object-cover" src="" alt="" />
                 </div>
                 <!-- profile description -->
-                <div id="detail-content">
-                    <p class="text-gray-600 mb-5">
-                        Co-founder Sekolah Pasar yang sejak tahun 2012 diinisiasi di
-                        pasar pasar rakyat di D.I. Yogyakarta, Jawa Tengah, Jawa
-                        Timur, dan direplikasi di banyak pasar lain di Indonesia,
-                        serta saat ini menjadi salah satu program revitalisasi pasar
-                        rakyat di Kementerian Perdagangan Republik Indonesia. Pernah
-                        menjadi Direktur Mubyarto Institute dan menginisiasi berbagai
-                        model popular education seperti Perguruan Tinggi Desa (PTDes),
-                        Sekolah Buruh, Sekolah Desa
-                    </p>
-                    <p class="text-gray-600 mb-5">
-                        Mandiri, Sekolah Koperasi Gula Kelapa, Sekolah Koperasi
-                        Indonesia Sekopia), dan bersama Konsorsium Kemala menginisiasi
-                        sekolah Hijau di Tanjung Jabung Timur, Jambi dan Solok
-                        Selatan, Sumatera Barat. Saat ini sebagai staf Pengajar di
-                        Fakultas Ekonomi dan Kepala Pusat Penelitian Pengabdian
-                        Masyarakat, dan Kerjasama(P3MK) Universitas Mercu Buana
-                        Yogyakarta (UMBY), peneliti Pusat Studi Ekonomi Kerakyatan
-                        UGM, anggota BPH Yayasan Mubyarto, Dewan Pakar Indonesian
-                        Consortium for Cooperative Innovation(ICCI), dan CeO Sepasar.
-                    </p>
-                </div>
+                <div id="detail-content"></div>
             </div>
             <div class="card-footer text-right">
                 <button class="btn btn-primary px-8" id="btnProfileClose">

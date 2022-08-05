@@ -1,7 +1,7 @@
 <section class="bg-light-100 py-10">
     <div class="container">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 text-gray-600">
-            <ul class="lg:col-span-2">
+            <ul class="lg:col-span-2 lg:flex flex-col justify-around">
                 <li>
                     <img src="<?= base_url() ?>assets/front/dist/img/sepasar-brand-footer.svg" alt="" />
                 </li>
@@ -13,28 +13,28 @@
             <ul>
                 <li class="font-bold mb-2 mt-4">Company</li>
                 <li class="mb-4 hover:text-primary-100 transition-all">
-                    <a href="">Home</a>
+                    <a href="<?= base_url('home') ?>">Home</a>
                 </li>
                 <li class="mb-4 hover:text-primary-100 transition-all">
-                    <a href="">About</a>
+                    <a href="<?= base_url('about') ?>">About</a>
                 </li>
                 <li class="mb-4 hover:text-primary-100 transition-all">
-                    <a href="">Pengajar</a>
+                    <a href="<?= base_url('pengajar') ?>">Pengajar</a>
                 </li>
                 <li class="mb-4 hover:text-primary-100 transition-all">
-                    <a href="">Teams</a>
+                    <a href="<?= base_url('team') ?>">Teams</a>
                 </li>
             </ul>
             <ul>
                 <li class="font-bold mb-4 mt-4">Useful Link</li>
                 <li class="mb-4 hover:text-primary-100 transition-all">
-                    <a href="">FAQ</a>
+                    <a href="<?= base_url('faq') ?>">FAQ</a>
                 </li>
                 <li class="mb-4 hover:text-primary-100 transition-all">
-                    <a href="">Relawan</a>
+                    <a href="<?= base_url('relawan') ?>">Relawan</a>
                 </li>
                 <li class="mb-4 hover:text-primary-100 transition-all">
-                    <a href="">Blog</a>
+                    <a href="<?= base_url('blog') ?>">Blog</a>
                 </li>
                 <li class="mb-4 hover:text-primary-100 transition-all">
                     <a href="">Product Service</a>
@@ -65,10 +65,10 @@
     <div class="container">
         <div class="grid grid-cols-1 md:grid-cols-2 md:items-end md:justify-between">
             <div>
-                <h5 class="font-bold mt-4">support by</h5>
+                <h5 class="font-bold mb-5">support by</h5>
                 <div class="flex">
-                    <img class="mr-5" src="<?= base_url() ?>assets/front/dist/img/ristek-brin.svg" alt="" />
-                    <img class="mr-5" src="<?= base_url() ?>assets/front/dist/img/umby-logo.svg" alt="" />
+                    <img class="mr-10" src="<?= base_url() ?>assets/front/dist/img/ristek-brin.svg" alt="" />
+                    <img class="mr-10" src="<?= base_url() ?>assets/front/dist/img/umby-logo.svg" alt="" />
                 </div>
             </div>
             <div class="md:text-end mt-7 text-gray-500">

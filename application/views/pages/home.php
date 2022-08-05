@@ -17,7 +17,8 @@
 
                 <!-- download my appliaction for mobile -->
                 <p class="mt-5 mb-2">Download Aplikasi Sepasar.id</p>
-                <a class="text-center flex justify-center md:inline-block" href="">
+                <a class="text-center flex justify-center md:inline-block"
+                    href="https://sepasar.id/frontend/front/lakukan_download">
                     <img class="w-48 hover:opacity-80 transition-all"
                         src="<?= base_url() ?>assets/front/dist/img/playstore.png" alt="" />
                 </a>
@@ -50,7 +51,7 @@
                     Keunggulan Support Relawan Pengajar Profesional, Pendampingan secara
                     masif, Interaktif dengan ragam Materi yang disesuaikan .
                 </p>
-                <button class="btn btn-primary">Selengkapnya >></button>
+                <a class="btn btn-primary" href="<?= base_url() ?>about">Selengkapnya >></a>
             </div>
         </div>
     </div>
@@ -63,36 +64,43 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <!-- card features -->
-            <div class="card bg-light-100 flex items-center gap-5 cursor-default cursor-default">
-                <img class="w-20" src="<?= base_url() ?>assets/front/dist/img/materi-beragam-dark.svg" alt="" />
+            <div
+                class="card card-feature rounded-2xl bg-light-100 hover:bg-primary-100 text-gray-600 hover:text-white flex items-center gap-5 cursor-default cursor-default transition-all">
+                <img class="feature-icon w-20" src="<?= base_url() ?>assets/front/dist/img/materi-beragam-dark.svg"
+                    alt="" />
                 <span>
                     <h4 class="font-medium">Materi yang beragam</h4>
                     <span class="text-xs">Dibuat oleh Pengembang Professional</span>
                 </span>
             </div>
-            <div class="card bg-light-100 flex items-center gap-5 cursor-default">
-                <img class="w-20" src="<?= base_url() ?>assets/front/dist/img/keamanan-sistem-dark.svg" alt="" />
+            <div
+                class="card card-feature rounded-2xl bg-light-100 hover:bg-primary-100 text-gray-600 hover:text-white flex items-center gap-5 cursor-default cursor-default transition-all">
+                <img class="feature-icon w-20" src="<?= base_url() ?>assets/front/dist/img/keamanan-sistem-dark.svg"
+                    alt="" />
                 <span>
                     <h4 class="font-medium">Keamanan Sistem</h4>
                     <span class="text-xs">Dibuat oleh Pengembang Professional</span>
                 </span>
             </div>
-            <div class="card bg-light-100 flex items-center gap-5 cursor-default">
-                <img class="w-20" src="<?= base_url() ?>assets/front/dist/img/akses-dark.svg" alt="" />
+            <div
+                class="card card-feature rounded-2xl bg-light-100 hover:bg-primary-100 text-gray-600 hover:text-white flex items-center gap-5 cursor-default cursor-default transition-all">
+                <img class="feature-icon w-20" src="<?= base_url() ?>assets/front/dist/img/akses-dark.svg" alt="" />
                 <span>
                     <h4 class="font-medium">Akses tak terbatas</h4>
                     <span class="text-xs">Pelajari materi dimana saja</span>
                 </span>
             </div>
-            <div class="card bg-light-100 flex items-center gap-5 cursor-default">
-                <img class="w-20" src="<?= base_url() ?>assets/front/dist/img/edukasi-dark.svg" alt="" />
+            <div
+                class="card card-feature rounded-2xl bg-light-100 hover:bg-primary-100 text-gray-600 hover:text-white flex items-center gap-5 cursor-default cursor-default transition-all">
+                <img class="feature-icon w-20" src="<?= base_url() ?>assets/front/dist/img/edukasi-dark.svg" alt="" />
                 <span>
                     <h4 class="font-medium">Video Edukasi</h4>
                     <span class="text-xs"> Tingkatkan berbagai macam keterampilan </span>
                 </span>
             </div>
-            <div class="card bg-light-100 flex items-center gap-5 cursor-default">
-                <img class="w-20" src="<?= base_url() ?>assets/front/dist/img/pengajar-dark.svg" alt="" />
+            <div
+                class="card card-feature rounded-2xl bg-light-100 hover:bg-primary-100 text-gray-600 hover:text-white flex items-center gap-5 cursor-default cursor-default transition-all">
+                <img class="feature-icon w-20" src="<?= base_url() ?>assets/front/dist/img/pengajar-dark.svg" alt="" />
                 <span>
                     <h4 class="font-medium">Pengajar Professional</h4>
                     <span class="text-xs">
@@ -100,8 +108,9 @@
                     </span>
                 </span>
             </div>
-            <div class="card bg-light-100 flex items-center gap-5 cursor-default">
-                <img class="w-20" src="<?= base_url() ?>assets/front/dist/img/relawan-dark.svg" alt="" />
+            <div
+                class="card card-feature rounded-2xl bg-light-100 hover:bg-primary-100 text-gray-600 hover:text-white flex items-center gap-5 cursor-default cursor-default transition-all">
+                <img class="feature-icon w-20" src="<?= base_url() ?>assets/front/dist/img/relawan-dark.svg" alt="" />
                 <span>
                     <h4 class="font-medium">Relawan Terbaik</h4>
                     <span class="text-xs"> Dapatkan bantuan dari Relawan terbaik </span>
@@ -132,7 +141,7 @@
                                 <span class="font-semibold text-gray-400"><?= $testimonial['position'] ?></span>
                             </div>
                         </div>
-                        <div class="card-body mt-6">
+                        <div class="card-body lg:mt-6">
                             <p class="text-gray-700">
                                 <?= $testimonial['expression'] ?>
                             </p>

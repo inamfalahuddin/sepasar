@@ -8,8 +8,8 @@ class Team_model extends CI_Model {
     }
 
     public function get_team_by_id($id) {
-        $this->db->select('team_name as name, team_position as position, team_img as img');
+        $this->db->select('team_name as name, team_position as position, team_img as img, team_desc as desc');
         $this->db->where('team_number', $id);
-        return $this->db->get('team')->result_array()[0];
+        return $this->db->get('team')->result_array();
     }
 }

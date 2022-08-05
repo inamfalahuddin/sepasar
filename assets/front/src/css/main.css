@@ -5,111 +5,119 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    font-family: "Nunito", sans-serif;
-    color: #2f2222;
-  }
+	html {
+		font-family: "Nunito", sans-serif;
+		color: #2f2222;
+	}
+
+	.news-content p {
+		@apply mb-7;
+	}
+
+	#detail-content p {
+		@apply text-gray-600 mb-5;
+	}
 }
 
 @layer components {
-  .container {
-    @apply mx-auto px-4 max-w-[1146px];
-  }
+	.container {
+		@apply mx-auto px-4 max-w-[1146px];
+	}
 
-  .nav-item {
-    @apply py-6 hover:text-gray-400;
-  }
+	.nav-item {
+		@apply py-6 hover:text-gray-400;
+	}
 
-  .btn {
-    @apply py-1 px-2 rounded-md;
-  }
-  .btn-primary {
-    @apply bg-primary-100 text-white border-2 border-primary-100 hover:bg-transparent hover:border-2 hover:border-primary-100 hover:text-primary-100 transition-all;
-  }
+	.btn {
+		@apply py-1 px-2 rounded-md;
+	}
+	.btn-primary {
+		@apply bg-primary-100 text-white border-2 border-primary-100 hover:bg-transparent hover:border-2 hover:border-primary-100 hover:text-primary-100 transition-all;
+	}
 
-  .btn-danger {
-    @apply bg-danger-100 text-white px-5 py-2 border-2 hover:bg-transparent hover:border-2 hover:border-danger-100 hover:text-danger-100 transition-all;
-  }
+	.btn-danger {
+		@apply bg-danger-100 text-white px-5 py-2 border-2 hover:bg-transparent hover:border-2 hover:border-danger-100 hover:text-danger-100 transition-all;
+	}
 
-  .btn-warning {
-    @apply bg-warning-100 text-white px-5 py-2 border-2 hover:bg-transparent hover:border-2 hover:border-warning-100 hover:text-warning-100 transition-all;
-  }
+	.btn-warning {
+		@apply bg-warning-100 text-white px-5 py-2 border-2 hover:bg-transparent hover:border-2 hover:border-warning-100 hover:text-warning-100 transition-all;
+	}
 
-  .title {
-    @apply font-bold text-3xl text-center my-14;
-  }
+	.title {
+		@apply font-bold text-3xl text-center my-14;
+	}
 
-  .card {
-    @apply py-7 px-10 shadow-md border-t-2 border-gray-50 rounded-md m-4 hover:shadow-sm bg-white;
-  }
+	.card {
+		@apply py-7 px-10 shadow-md border-t-2 border-gray-50 rounded-md m-4 hover:shadow-sm bg-white;
+	}
 
-  .card-img {
-    @apply bg-gray-50 w-full rounded-xl overflow-hidden flex items-center justify-center;
-  }
+	.card-img {
+		@apply bg-gray-50 w-full rounded-xl overflow-hidden flex items-center justify-center;
+	}
 
-  .card-img img {
-    @apply w-full;
-  }
+	.card-img img {
+		@apply w-full;
+	}
 
-  .dropdown {
-    @apply hidden absolute border-t-2 border-gray-50 bg-white py-4 pl-5 pr-16 top-16 rounded-md animate-growOut origin-top shadow-lg text-gray-800;
-  }
+	.dropdown {
+		@apply hidden absolute border-t-2 border-gray-50 bg-white py-4 pl-5 pr-16 top-16 rounded-md animate-growOut origin-top shadow-lg text-gray-800;
+	}
 
-  .dropdown-menu {
-    @apply flex items-center;
-  }
+	.dropdown-menu {
+		@apply flex items-center;
+	}
 
-  .dropdown-menu:hover .dropdown {
-    @apply block;
-  }
+	.dropdown-menu:hover .dropdown {
+		@apply block;
+	}
 
-  .dropdown:hover {
-    @apply block;
-  }
+	.dropdown:hover {
+		@apply block;
+	}
 
-  .nav-md-item {
-    @apply fixed bg-white left-0 top-16 right-0 bottom-0 flex flex-col items-center justify-center translate-x-full transition-all;
-  }
+	.nav-md-item {
+		@apply fixed bg-white left-0 top-16 right-0 bottom-0 flex flex-col items-center justify-center translate-x-full transition-all;
+	}
 
-  .nav-md-item li {
-    @apply opacity-0;
-  }
+	.nav-md-item li {
+		@apply opacity-0;
+	}
 
-  .nav-md-show {
-    @apply translate-x-0;
-  }
+	.nav-md-show {
+		@apply translate-x-0;
+	}
 
-  .swiper-slide {
-    @apply transition-all ease-out duration-500;
-  }
+	.swiper-slide {
+		@apply transition-all ease-out duration-500;
+	}
 
-  .swiper-slide-active {
-    @apply scale-100 bg-light-200 py-10;
-  }
+	.swiper-slide-active {
+		@apply scale-100 bg-light-200 py-10;
+	}
 
-  .swiper-button-prev::after,
-  .swiper-button-next::after {
-    @apply font-bold text-xl;
-  }
+	.swiper-button-prev::after,
+	.swiper-button-next::after {
+		@apply font-bold text-xl;
+	}
 
-  .accordion-item {
-    @apply mb-5 border-2 border-gray-200 rounded-xl p-5 cursor-pointer;
-  }
+	.accordion-item {
+		@apply mb-5 border-2 border-gray-200 rounded-xl p-5 cursor-pointer;
+	}
 
-  .navbar-gradient {
-    @apply bg-gradient-to-b from-light-200 to-light-300;
-  }
+	.navbar-gradient {
+		@apply bg-gradient-to-b from-light-200 to-light-300;
+	}
 }
 
 /* Animation */
 @keyframes fadeNavItem {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-  }
+	from {
+		opacity: 0;
+		transform: translateX(100%);
+	}
 
-  to {
-    opacity: 1;
-    transform: translateX(0%);
-  }
+	to {
+		opacity: 1;
+		transform: translateX(0%);
+	}
 }
