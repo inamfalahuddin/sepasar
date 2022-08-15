@@ -20,7 +20,7 @@
         <?php endforeach ?>
     </div>
 
-    <div class="text-center mt-4">
+    <!-- <div class="text-center mt-4">
         <button class="btn btn-primary py-2.5 px-10">See More</button>
-    </div>
+    </div> -->
 </div>

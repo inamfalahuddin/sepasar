@@ -6,8 +6,8 @@
                     <img src="<?= base_url() ?>assets/front/dist/img/sepasar-brand-footer.svg" alt="" />
                 </li>
                 <li class="mt-5">
-                    StartUp yang bergerak di Layanan Pendidikan Edukasi Gratis
-                    berbasis Aplikasi bagi Pedagang Pasar Tradisional
+                    StartUp yang bergerak di Layanan <br> Pendidikan Edukasi Gratis
+                    berbasis Aplikasi <br> bagi Pedagang Pasar Tradisional
                 </li>
             </ul>
             <ul>

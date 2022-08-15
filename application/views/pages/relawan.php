@@ -17,10 +17,10 @@
 
         </div>
     </div>
-    <div class="w-100 flex justify-center -translate-y-10">
+    <!-- <div class="w-100 flex justify-center -translate-y-10">
         <button id="seeMoreRelawan">
             <img class="w-100 relative" src="<?= base_url()  ?>assets/front/dist//img/circle-chevron-bottom.svg"
                 alt="" />
         </button>
-    </div>
+    </div> -->
 </div>

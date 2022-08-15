@@ -5,7 +5,7 @@
     <?php $this->load->view('layout/header') ?>
 </head>
 
-<body class="hidden">
+<body class="">
     <!-- navbar -->
     <nav class="<?= $nav_style ? $nav_style : '' ?> w-full fixed z-50" id="navbar">
         <div class="container">
