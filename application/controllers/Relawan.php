@@ -21,4 +21,14 @@ class Relawan extends CI_Controller {
         $tmp['contents'] = $this->load->view('pages/relawan', $data, TRUE);
 		$this->load->view('layout/template.php', $tmp);
 	}
+
+    public function get_relawan() {
+        $this->load->model('Relawan_model');
+        echo json_encode($this->Relawan_model->get_relawan());
+    }
+    
+    public function get_relawan_limit($num) {
+        $this->load->model('Relawan_model');
+        echo json_encode($this->Relawan_model->get_relawan_limit($num));
+    }
 }

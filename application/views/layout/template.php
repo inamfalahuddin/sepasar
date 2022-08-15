@@ -56,8 +56,9 @@
                 </ul>
                 <!-- button login & register -->
                 <div class="hidden lg:flex gap-4 items-center">
-                    <a class="text-primary-100 hover:opacity-50 transition-all" href="">Log In</a>
-                    <button class="btn btn-primary">Get Started</button>
+                    <a class="text-primary-100 hover:opacity-50 transition-all"
+                        href="<?= base_url('login_relawan') ?>">Log In</a>
+                    <a class="btn btn-primary" href="<?= base_url('register_relawan') ?>">Get Started</a>
                 </div>
                 <!-- button menu -->
                 <div id="btnMenu" class="lg:hidden w-8 h-5 flex flex-col justify-between cursor-pointer">

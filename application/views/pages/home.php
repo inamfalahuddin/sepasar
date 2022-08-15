@@ -11,8 +11,9 @@
                 </p>
                 <!-- cal to action -->
                 <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-2 sm:gap-5">
-                    <button class="btn btn-danger">RELAWAN</button>
-                    <button class="btn btn-warning">PENGAJAR</button>
+                    <a href="<?= base_url('register_relawan') ?>" class="btn btn-danger">RELAWAN</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_QLmd0dMI72F9P9RgN1dJ5gWLFNMghPURV0wRZlAFUTvV5w/viewform"
+                        class="btn btn-warning">PENGAJAR</a>
                 </div>
 
                 <!-- download my appliaction for mobile -->

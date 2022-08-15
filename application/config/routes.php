@@ -52,5 +52,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'home';
 $route['team/getTeamById/(:any)'] = 'team/getTeamById/$1';
 $route['blog/detail/(:num)'] = 'blog/detail/$1';
+$route['relawan/(:num)'] = 'relawan/get_relawan_limit/$1';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

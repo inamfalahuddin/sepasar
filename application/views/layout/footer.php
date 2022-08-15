@@ -37,7 +37,7 @@
                     <a href="<?= base_url('blog') ?>">Blog</a>
                 </li>
                 <li class="mb-4 hover:text-primary-100 transition-all">
-                    <a href="">Product Service</a>
+                    <a href="<?= base_url('product_service') ?>">Product Service</a>
                 </li>
             </ul>
             <ul>
@@ -67,8 +67,8 @@
             <div>
                 <h5 class="font-bold mb-5">support by</h5>
                 <div class="flex">
-                    <img class="mr-10" src="<?= base_url() ?>assets/front/dist/img/ristek-brin.svg" alt="" />
-                    <img class="mr-10" src="<?= base_url() ?>assets/front/dist/img/umby-logo.svg" alt="" />
+                    <img class="mr-10 w-20" src="<?= base_url() ?>assets/front/dist/img/umby-logo.svg" alt="" />
+                    <img class="mr-10 w-20" src="<?= base_url() ?>assets/front/dist/img/ristek-brin.svg" alt="" />
                 </div>
             </div>
             <div class="md:text-end mt-7 text-gray-500">
