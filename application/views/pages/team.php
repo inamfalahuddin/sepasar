@@ -32,6 +32,7 @@
                     <img id="detail-img" class="object-cover" src="" alt="" />
                 </div>
                 <!-- profile description -->
+                <h2 class="font-bold text-xl mb-5" id="detail-name"></h2>
                 <div id="detail-content"></div>
             </div>
             <div class="card-footer text-right">

@@ -1,13 +1,13 @@
 <section class="bg-light-100 py-10">
     <div class="container">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 text-gray-600">
-            <ul class="lg:col-span-2 lg:flex flex-col justify-around">
+            <ul class="lg:col-span-2">
                 <li>
                     <img src="<?= base_url() ?>assets/front/dist/img/sepasar-brand-footer.svg" alt="" />
                 </li>
-                <li class="mt-5">
+                <li class="mt-5" style="line-height: 2rem;">
                     StartUp yang bergerak di Layanan <br> Pendidikan Edukasi Gratis
-                    berbasis Aplikasi <br> bagi Pedagang Pasar Tradisional
+                    berbasis <br> Aplikasi bagi Pedagang Pasar <br> Tradisional
                 </li>
             </ul>
             <ul>

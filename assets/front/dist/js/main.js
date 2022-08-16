@@ -195,5 +195,6 @@ function cardDetailContent(obj) {
 		"detail-img"
 	).src = `http://localhost/sepasar/assets/front/dist/img/${data.img}`;
 
+	document.getElementById("detail-name").innerHTML = data.name;
 	document.getElementById("detail-content").innerHTML = data.desc;
 }

@@ -25,14 +25,14 @@
                 </a>
             </div>
             <div class="flex justify-center md:justify-end items-center order-1 md:order-2">
-                <img src="<?= base_url() ?>assets/front/dist/img/hero-image.jpg" alt="" />
+                <img src="<?= base_url() ?>assets/front/dist/img/hero-image.jpg" alt="" style="max-width: 400px" />
             </div>
         </div>
     </div>
 </section>
 
 <!-- profile section -->
-<section class="bg-gradient-to-b from-white to-light-100 py-10 lg:py-5">
+<section class=" bg-gradient-to-b from-white to-light-100 py-10 lg:py-5">
     <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-12 mb-20">
             <div class="flex justify-center items-center lg:justify-start order-2 lg:order-1 col-span-7">
