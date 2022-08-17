@@ -45,7 +45,7 @@
             <div
                 class="text-center lg:text-start mb-10 lg:mb-0 order-1 lg:order-2 col-span-5 flex flex-col justify-center items-center lg:items-start">
                 <h2 class="text-3xl">Profil Sepasar.id</h2>
-                <p class="my-5">
+                <p class="my-5" style="line-height: 1.75rem;">
                     Sepasar.Id adalah suatu StartUp yang bergerak di Layanan
                     Pendidikan/Edukasi Gratis berbasis Aplikasi bagi Pedagang Pasar
                     Tradisional, Dapat diakses melalui Mobile Android ataupun Web dengan

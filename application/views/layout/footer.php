@@ -65,7 +65,7 @@
     <div class="container">
         <div class="grid grid-cols-1 md:grid-cols-2 md:items-end md:justify-between">
             <div>
-                <h5 class="font-bold mb-5">support by</h5>
+                <h5 class="font-bold mb-5">Support by</h5>
                 <div class="flex">
                     <img class="mr-10 w-20" src="<?= base_url() ?>assets/front/dist/img/umby-logo.svg" alt="" />
                     <img class="mr-10 w-20" src="<?= base_url() ?>assets/front/dist/img/ristek-brin.svg" alt="" />
